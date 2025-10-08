@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Multi-Lane Reddit Client</title>
+    <link rel="stylesheet" href="src/styles.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>Reddit Lanes</h1>
+      <div class="controls">
+        <button id="add-lane" class="btn">+ Add Subreddit</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="lanes" class="lanes"></div>
+    </main>
+
+    <!-- Add Subreddit Modal -->
+    <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+      <div class="modal-panel">
+        <h2>Add subreddit</h2>
+        <label for="sub-input">r/</label>
+        <input id="sub-input" placeholder="e.g. javascript" />
+        <div class="modal-actions">
+          <button id="cancel-add" class="btn btn-secondary">Cancel</button>
+          <button id="confirm-add" class="btn">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/app.js"></script>
+  </body>
+</html>

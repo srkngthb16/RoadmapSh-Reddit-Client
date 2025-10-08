@@ -1,0 +1,11 @@
+{
+  "name": "reddit-multi-lane-client",
+  "version": "1.0.0",
+  "description": "Simple multi-lane Reddit client demo (static)",
+  "author": "Serkan Dalgıç",
+  "license": "Freelence Dev License",
+  "scripts": {
+    "start": "npx http-server -c-1 -p 8080"
+  },
+  "devDependencies": {}
+}
